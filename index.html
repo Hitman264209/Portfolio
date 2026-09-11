@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subhrajit Tripathy — Data Analyst &amp; Developer</title>
+<meta name="description" content="Portfolio of Subhrajit Sreedhar Tripathy — aspiring data analyst and developer building explainable, deployed AI tools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-bg" aria-hidden="true"></div>
+
+<nav class="nav">
+  <span class="nav-logo">ST<span class="dot">.</span></span>
+  <div class="nav-links">
+    <a href="#experience">experience</a>
+    <a href="#work">work</a>
+    <a href="#stack">stack</a>
+    <a href="#resume">resume</a>
+    <a href="#contact">contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="terminal-line"><span class="prompt">$</span> <span id="typed"></span><span class="cursor">▌</span></p>
+    <h1 class="hero-name">Subhrajit<br>Tripathy</h1>
+    <p class="hero-role">Aspiring Data Analyst <span class="slash">/</span> Software Developer</p>
+    <p class="hero-desc">BCA graduate who ships working, explainable, <em>deployed</em> tools — not just notebooks. Client work, three live projects, 31 automated tests, zero black boxes.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#work">View projects</a>
+      <a class="btn btn-ghost" id="resume-btn" href="Subhrajit_Tripathy_Resume.pdf" target="_blank" rel="noopener">
+        <i class="icon-download"></i> Resume
+      </a>
+    </div>
+    <div class="hero-links">
+      <a href="mailto:Subhrajit5104@gmail.com">email</a>
+      <a href="https://github.com/Hitman264209" target="_blank" rel="noopener">github</a>
+      <a href="https://www.linkedin.com/in/subhrajit-tripathy-880000371/" target="_blank" rel="noopener">linkedin</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="stats" aria-label="Quick stats">
+    <div class="stat"><span class="stat-num">3</span><span class="stat-label">live projects</span></div>
+    <div class="stat"><span class="stat-num">31</span><span class="stat-label">automated tests</span></div>
+    <div class="stat"><span class="stat-num">100%</span><span class="stat-label">deployed &amp; public</span></div>
+    <div class="stat"><span class="stat-num">0</span><span class="stat-label">black-box models</span></div>
+  </section>
+
+  <section id="experience" class="section">
+    <p class="eyebrow">// experience</p>
+    <h2 class="section-title">Where I've worked</h2>
+
+    <div class="exp-card">
+      <div class="exp-head">
+        <div>
+          <h3>Data Analyst Intern (Fresher)</h3>
+          <p class="project-tag">Stratezic Solutions</p>
+        </div>
+        <span class="exp-dates">January 2026 — Present</span>
+      </div>
+      <p class="project-desc">Independently built and launched an end-to-end e-commerce website for <strong>Dobbe Foods</strong>, a food brand featured on Shark Tank India — from initial setup through final deployment, using WordPress.</p>
+      <ul class="project-points">
+        <li>Developed order-raising and query-raising features, with submissions captured and organized on the backend using Google Sheets</li>
+        <li>Set up an automated email notification system so the business and customers stayed informed in real time</li>
+        <li>Designed and implemented core e-commerce functionality, including a fully working shopping cart</li>
+        <li>Redesigned the site's visual design and layout for improved graphics and a more interactive interface</li>
+      </ul>
+      <div class="tech-tags">
+        <span>WordPress</span><span>E-commerce</span><span>Google Sheets</span><span>Email Automation</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="section">
+    <p class="eyebrow">// work</p>
+    <h2 class="section-title">Things I've shipped</h2>
+    <p class="section-sub">Every project below is live right now — click through and try it, not just read about it.</p>
+
+    <div class="projects">
+
+      <article class="project">
+        <div class="project-head">
+          <div>
+            <h3>HealthScope</h3>
+            <p class="project-tag">AI-powered obesity risk predictor</p>
+          </div>
+          <span class="live-badge"><span class="live-dot"></span>live</span>
+        </div>
+        <p class="project-desc">A Flask + scikit-learn tool that predicts obesity risk from lifestyle data using a deliberately explainable Decision Tree — every prediction traces back to the exact questions that led to it — paired with rule-based, personalized recommendations.</p>
+        <ul class="project-points">
+          <li>~67% accuracy vs. a 43% majority-class baseline, reported honestly</li>
+          <li>Decision Tree chosen over black-box models for explainability in a health-screening context</li>
+          <li>15 automated tests, deployed live with gunicorn on Render</li>
+        </ul>
+        <div class="tech-tags">
+          <span>Python</span><span>Flask</span><span>scikit-learn</span><span>pandas</span><span>Render</span>
+        </div>
+        <div class="project-links">
+          <a class="btn btn-small btn-primary" href="https://healthscope-bzj4.onrender.com" target="_blank" rel="noopener">Live demo →</a>
+          <a class="btn btn-small btn-ghost" href="https://github.com/Hitman264209/Healthscope" target="_blank" rel="noopener">Code</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <div>
+            <h3>Expense Tracker</h3>
+            <p class="project-tag">Personal finance REST API &amp; dashboard</p>
+          </div>
+          <span class="live-badge"><span class="live-dot"></span>live</span>
+        </div>
+        <p class="project-desc">A full CRUD REST API backed by SQLite, with analytics endpoints for spend-by-category and monthly summaries, feeding a live dashboard with an interactive doughnut chart.</p>
+        <ul class="project-points">
+          <li>Full CRUD API — POST, GET, PATCH, DELETE — with clean input validation</li>
+          <li>Clean architecture: storage, validation, and HTTP routing kept fully independent</li>
+          <li>16 automated tests with an isolated temp database per run</li>
+        </ul>
+        <div class="tech-tags">
+          <span>Python</span><span>Flask</span><span>SQLite</span><span>JavaScript</span><span>Render</span>
+        </div>
+        <div class="project-links">
+          <a class="btn btn-small btn-primary" href="https://expense-tracker-app-l5gm.onrender.com" target="_blank" rel="noopener">Live demo →</a>
+          <a class="btn btn-small btn-ghost" href="https://github.com/Hitman264209/Expense-Tracker" target="_blank" rel="noopener">Code</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <div>
+            <h3>SmartRep</h3>
+            <p class="project-tag">AI fitness trainer</p>
+          </div>
+          <span class="live-badge"><span class="live-dot"></span>live</span>
+        </div>
+        <p class="project-desc">Real-time AI pose detection that automatically tracks and counts workout repetitions, with Firebase-backed accounts and workout history.</p>
+        <ul class="project-points">
+          <li>Real-time pose detection with TensorFlow.js for accurate rep counting</li>
+          <li>Secure Firebase authentication with personalized sessions</li>
+          <li>Shipped through the full SDLC — requirements to deployment — on Vercel</li>
+        </ul>
+        <div class="tech-tags">
+          <span>JavaScript</span><span>TensorFlow.js</span><span>Firebase</span><span>Vercel</span>
+        </div>
+        <div class="project-links">
+          <a class="btn btn-small btn-primary" href="https://smart-rep-chi.vercel.app" target="_blank" rel="noopener">Live demo →</a>
+          <a class="btn btn-small btn-ghost" href="https://github.com/Hitman264209" target="_blank" rel="noopener">Code</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="stack" class="section">
+    <p class="eyebrow">// stack</p>
+    <h2 class="section-title">What I build with</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <div class="pills"><span>Python</span><span>JavaScript</span><span>C</span><span>C++</span><span>Core Java</span></div>
+      </div>
+      <div class="skill-group">
+        <h4>Data analysis</h4>
+        <div class="pills"><span>pandas</span><span>NumPy</span><span>scikit-learn</span><span>Matplotlib</span><span>SQL</span><span>Excel</span></div>
+      </div>
+      <div class="skill-group">
+        <h4>Web &amp; backend</h4>
+        <div class="pills"><span>Flask</span><span>REST APIs</span><span>HTML</span><span>CSS</span><span>WordPress</span></div>
+      </div>
+      <div class="skill-group">
+        <h4>Data &amp; infra</h4>
+        <div class="pills"><span>SQLite</span><span>Firebase</span><span>Git</span><span>GitHub</span><span>Render</span><span>Vercel</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="section resume-section">
+    <p class="eyebrow">// resume</p>
+    <h2 class="section-title">Full background</h2>
+    <p class="section-sub">Education, work experience, and the detail behind every project above.</p>
+    <a class="btn btn-primary btn-lg" href="Subhrajit_Tripathy_Resume.pdf" target="_blank" rel="noopener">
+      <i class="icon-download"></i> Download resume (PDF)
+    </a>
+  </section>
+
+</main>
+
+<footer id="contact" class="footer">
+  <p class="eyebrow">// contact</p>
+  <h2 class="section-title">Let's talk</h2>
+  <p class="footer-sub">Open to Data Analyst, Software Developer, and Technical Associate roles.</p>
+  <div class="footer-links">
+    <a href="mailto:Subhrajit5104@gmail.com">Subhrajit5104@gmail.com</a>
+    <a href="tel:8928410321">8928410321</a>
+    <a href="https://github.com/Hitman264209" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/subhrajit-tripathy-880000371/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <p class="footer-copy">Built and deployed by Subhrajit Tripathy.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
